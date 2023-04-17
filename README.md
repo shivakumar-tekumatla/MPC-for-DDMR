@@ -6,5 +6,5 @@ To verify the dynamics , run the `robot.py` file with appropriate initial condit
 
 ``` 
 python robot.py
-
 ```
+Example trajectory of the robot is shown as the following: 

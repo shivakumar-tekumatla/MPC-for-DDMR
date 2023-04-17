@@ -24,6 +24,9 @@ Initial conditions:
 
 <img src='https://github.com/shivakumar-tekumatla/MPC-for-DDMR/blob/main/example_path.png'/>
 
-Now, MPC algorithm is designed to track the trajectory while avoiding the obstacle. 
+Now, MPC algorithm is designed to track the trajectory while avoiding the obstacle. This gif is at 2x speed.
 
 <img src='https://github.com/shivakumar-tekumatla/MPC-for-DDMR/blob/main/result_1.gif'/>
+
+For better obstacle avoidance, we can give more obstacle cost weight. Reusl of it is as gioven below. 
+

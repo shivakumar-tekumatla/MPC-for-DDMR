@@ -23,3 +23,6 @@ Initial conditions:
 ```
 
 <img src='https://github.com/shivakumar-tekumatla/MPC-for-DDMR/blob/main/example_path.png'/>
+
+Now, MPC algorithm is designed to track the trajectory while avoiding the obstacle. 
+

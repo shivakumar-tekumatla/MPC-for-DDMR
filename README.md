@@ -21,3 +21,5 @@ Initial conditions:
     control_inputs = np.array([[1],[2]])
     sim_time = 10 #seconds
 ```
+
+<img src='https://github.com/shivakumar-tekumatla/MPC-for-DDMR/blob/main/example_path.png'/>

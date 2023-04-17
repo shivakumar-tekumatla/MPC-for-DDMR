@@ -31,3 +31,5 @@ Now, MPC algorithm is designed to track the trajectory while avoiding the obstac
 For better obstacle avoidance, we can give more obstacle cost weight. Reusl of it is as gioven below. Robot here is trying to avoid the obstacle and takes longer path.
 
 <img src='https://github.com/shivakumar-tekumatla/MPC-for-DDMR/blob/main/result_2.gif'/>
+
+For better performance, play around with the MPC parameters!

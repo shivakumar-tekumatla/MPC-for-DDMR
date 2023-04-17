@@ -24,7 +24,7 @@ Initial conditions:
 
 <img src='https://github.com/shivakumar-tekumatla/MPC-for-DDMR/blob/main/example_path.png'/>
 
-Now, MPC algorithm is designed to track the trajectory while avoiding the obstacle. This gif is at 2x speed.
+Now, MPC algorithm is designed to track the trajectory while avoiding the obstacle. This gif is at 2x speed. For obstacle avoidance , make sure to set the ```obs_optim``` flag to ```True```. 
 
 <img src='https://github.com/shivakumar-tekumatla/MPC-for-DDMR/blob/main/result_1.gif'/>
 

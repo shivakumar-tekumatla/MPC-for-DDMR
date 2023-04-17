@@ -26,3 +26,4 @@ Initial conditions:
 
 Now, MPC algorithm is designed to track the trajectory while avoiding the obstacle. 
 
+<img src='https://github.com/shivakumar-tekumatla/MPC-for-DDMR/blob/main/result_1.gif'/>

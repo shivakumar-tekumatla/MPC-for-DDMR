@@ -99,6 +99,8 @@ if __name__ == "__main__":
     pos = y[:,0:3]
     x = pos[:,0]
     y = pos[:,2]
+    plt.xlabel("X position")
+    plt.ylabel("Y position")
+    plt.title("Trajectory taken by the DDMR")
     plt.plot(x,y)
     plt.show()
-

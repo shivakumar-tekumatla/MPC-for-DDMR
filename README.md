@@ -8,3 +8,16 @@ To verify the dynamics , run the `robot.py` file with appropriate initial condit
 python robot.py
 ```
 Example trajectory of the robot is shown as the following: 
+
+Initial conditions: 
+
+```
+    position = np.array([0,0])
+    velocity = np.array([0,0])
+    wheels_angles=np.array([0,0])
+    wheels_velocities = np.array([0,0])
+    theta = 0 
+    theta_dot = 0 
+    control_inputs = np.array([[1],[2]])
+    sim_time = 10 #seconds
+```

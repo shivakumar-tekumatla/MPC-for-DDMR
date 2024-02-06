@@ -1,13 +1,13 @@
 {"MPC":{
     "dt":0.25,
-    "Horizon":10,
+    "Horizon":4,
     "Step":0.5,
     "sim_time":30,
     "tracking_range_residual":0.0,
     "tracking_cost_weight":1.0,
     "heading_cost_weight":1.0,
     "desired_heading_angle_to_trajectory":0.0,
-    "obstacle_cost_weight":10000.0,
+    "obstacle_cost_weight":100000.0,
     "obstacle_bounding_size":0.3
     },
 "Robot":{

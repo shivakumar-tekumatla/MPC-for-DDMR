@@ -111,20 +111,7 @@ class MPC(Robot):
             trajectory_positions = np.append(trajectory_positions, [trajectory_position], axis=0)
             obstacles_position = obstacles_position + obstacles_velocity*self.STEP
             obstacles_positions = np.append(obstacles_positions, [obstacles_position], axis=0)
-        
-        # # with these control inputs , what are the robot's next states?
-        # t  = np.linspace(0,self.HORIZON*self.STEP,self.HORIZON+1)  # simulate for this time for  
-        # states = self.simulate_dynamics(t,robot_position,robot_velocity,theta,theta_dot,wheels_angles,wheels_velocities,control_inputs) # these are the robot_states in the future 
-        # # compute the error for this 
-        # x,x_dot,y,y_dot,theta,theta_dot,phi1,phi1_dot,phi2,phi2_dot = states.T 
-        # robot_positions = np.vstack((x,y)).T
-        # robot_velocities = np.vstack((x_dot,y_dot)).T
-        # # predict the trajectory
-        # for i in range(self.HORIZON):
-        #     trajectory_position = trajectory_position + trajectory_velocity*self.STEP
-        #     trajectory_positions = np.append(trajectory_positions, [trajectory_position], axis=0)
-        #     obstacles_position = obstacles_position + obstacles_velocity*self.STEP
-        #     obstacles_positions = np.append(obstacles_positions, [obstacles_position], axis=0)
+    
         cost_ = self.cost(robot_positions,trajectory_positions,obstacles_positions)
         # print("Cost...",cost,end="\r")
         return cost_
@@ -254,7 +241,6 @@ def main():
         obstacles_position = obstacle_positions[i]
         obstacles_velocity = (obstacle_positions[i+1]-obstacles_position)/mpc.dt #np.array([obstacle_velocities[i]])
         inputs = mpc.control(states,trajectory_position,trajectory_velocity,obstacles_position,obstacles_velocity)#,obstacle_cost_optim)
-        print(inputs)
         print(f"Time {sim_time[i]} Control Inputs {inputs}", end="\r")
 
         states_ = mpc.simulate_dynamics(t,robot_position,robot_velocity,theta,theta_dot,wheel_angles,wheel_velocities,inputs) # these are the robot_states in the future 

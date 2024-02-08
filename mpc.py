@@ -1,3 +1,4 @@
+# see this - https://medium.com/@eng_elias/numba-unleashing-the-power-of-python-for-high-performance-computing-fdec2c778b10 
 from scipy.optimize import Bounds, minimize 
 import cvxpy as cp
 import numpy as np
